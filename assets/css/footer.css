@@ -1,0 +1,79 @@
+/* Style untuk Footer */
+footer {
+  background: linear-gradient(90deg, #667eea 0%, #fcb69f 100%); /* Warna latar belakang footer, sesuaikan dengan warna halaman utama */
+  color: #ffffff; /* Warna teks footer */
+  padding: 40px 50px;
+  font-family: 'Arial', sans-serif;
+  max-width: 1024px; /* Max width sama dengan container utama */
+  margin: auto; /* Memusatkan footer */
+}
+
+footer h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #f9f9f9; /* Warna judul */
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+footer a {
+  color: #f9f9f9;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Bagian Konten Footer */
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Setiap bagian footer akan mengambil ukuran flex: 1 dan margin */
+.footer__section {
+  flex: 1;
+  min-width: 400px;
+  margin: 50px;
+}
+
+.footer__section.links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__section.links ul li {
+  margin: 10px 0;
+}
+
+.footer__section.links ul li a {
+  font-size: 0.9em;
+}
+
+/* Bagian Sosial Media */
+.footer__social {
+  margin: 20px 0;
+}
+
+.footer__social a {
+  color: #f9f9f9;
+  margin: 0 10px;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.footer__social a:hover {
+  color: #ddd; /* Warna hover ikon sosial media */
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .footer__container {
+      flex-direction: column;
+      text-align: center;
+  }
+}
